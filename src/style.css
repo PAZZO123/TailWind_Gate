@@ -27,7 +27,16 @@
 }
 
 @layer utilities{
-  .flex-cols{
+  /* tailwind.css or globals.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none;    /* Firefox */
+}
+
+  .flex-cols {
     @apply flex flex-col justify-center items-center
   }
   .flex-center{
