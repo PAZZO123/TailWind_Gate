@@ -1,1 +1,35 @@
 @import "tailwindcss";
+@theme {
+  --animate-pazzo: pazzo 4s ease-in-out;
+  @keyframes pazzo {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+   --animate-fadIn: fadIn 1s ease-in-out infinite;
+  @keyframes fadIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+}
+@layer base{
+  body{
+
+  }
+}
+
+@layer utilities{
+  .flex-cols{
+    @apply flex flex-col justify-center items-center
+  }
+  .flex-center{
+    @apply flex justify-center items-center
+  }}
