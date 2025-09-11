@@ -3,17 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div class="b">
-      <img class="object-cover object-center w-full animate-pazzo" src="Images/desktop-penn.avif" alt="">
+    
+   <div class="relative bg-[url('/Images/penn-dental-cedar-2.avif')] lg:bg-[url('/Images/desktop-penn.avif')] bg-cover bg-center bg-no-repeat">
+  <!-- NAVBAR -->
+  <nav> 
+    <nav class="relative z-20 text-white bg-transparent flex justify-between px-6 pt-6 pb-3 border-b-1 border-gray-300 2xl:ml-[400px]">
+    <!-- Nav For Mobile -->
+    <div class="lg:hidden"><i class="fa-solid fa-magnifying-glass z-10 text-2xl"></i></div>
+    <div><img class="w-[100px] md:w-[150px] lg:w-[200px] 2xl:hidden" src="Images/UPenn-logo2.svg" alt=""></div>
+    <div class="lg:hidden"><img class="w-9 invert brightness-0  " src="Images/cross.svg" alt=""></div>
+    <!-- Nav for Desktop -->
+    <div class="hidden lg:flex gap-10 pt-3"> <i class="fa-solid fa-magnifying-glass z-10 text-2xl"></i>
+       <div class="flex gap-1 uppercase"><p>Resources</p> <i class="fa-solid fa-chevron-down text-sm pt-1.5"></i></div> 
+       <div class="w-fit p-4 bg-red-800 uppercase text-sm -mt-2 h-fit">Give to PENN</div></div>
+  </nav>
+  <div class=" hidden font-bold lg:flex justify-between text-white z-20 relative px-6 xl:ml-[300px] 2xl:ml-[700px]">
+    <div class="flex gap-1 after:content-['/'] after:text-gray-400 after:pl-1 hover:border-b-3 hover:border-[#f8a51b] py-1"><p>ACADEMICS</p><i class="fa-solid fa-chevron-down text-sm pt-1.5"></i></div>
+    <div class="flex gap-1 after:content-['/'] after:text-gray-400 after:pl-1 hover:border-b-3 hover:border-[#f8a51b] py-1"><p>ADMISSION & AIDS</p></div>
+    <div class="flex gap-1 after:content-['/'] after:text-gray-400 after:pl-1 hover:border-b-3 hover:border-[#f8a51b] py-1"><p>ATHLETICS</p></div>
+    <div class="flex gap-1 after:content-['/'] after:text-gray-400 after:pl-1  border-b-3 border-[#f8a51b] py-1"><p>RESEARCH & INNOVATION</p> <i class="fa-solid fa-chevron-down text-sm pt-1.5"></i></div>
+    <div class="flex gap-1 after:content-['/'] after:text-gray-400 after:pl-1 hover:border-b-3 hover:border-[#f8a51b] py-1"><p>LIFE AT PENN</p><i class="fa-solid fa-chevron-down text-sm pt-1.5"></i></div>
+    <div class="flex gap-1 hover:border-b-3 hover:border-[#f8a51b] py-"><p>ABOUT</p> <i class="fa-solid fa-chevron-down text-sm pt-1.5"></i></div>
+  </div>
+  <div class="hidden 2xl:inline absolute z-30 left-[140px] top-10"><img class="w-[250px]" src="Images/UPenn-logo2.svg" alt=""></div>
+  </nav>
 
-    </div>
-    <div class="bg-[url('/Images/penn-dental-cedar-2.avif')]   bg-[url('/Images/desktop-penn.avif')]h-fit p-6 text-8xl font-extrabold text-white">
-      TAILWIND CLONING GATE SETUP
-    </div>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60 z-10"></div>
+</div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
