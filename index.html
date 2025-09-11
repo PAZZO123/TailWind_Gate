@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
+  <body class="font-[Roboto]">
     
    <div class="relative bg-[url('/Images/penn-dental-cedar-2.avif')] lg:bg-[url('/Images/desktop-penn.avif')] bg-cover bg-center bg-no-repeat">
   <!-- NAVBAR -->
@@ -45,37 +45,37 @@
    </div>
 </div>
 <!-- News AND TOpics -->
- <div class="text-[#011F5B] font-[EB_Garamond] lg:flex justify-between pt-20 px-6 xl:px-[100px] 2xl:px-[200px]  ">
+ <div class="text-[#011F5B] font-[EB_Garamond] lg:flex justify-between pt-20 px-6 xl:px-[100px] 2xl:px-[200px] max-md:flex max-md:flex-col-reverse max-md:pt-3  ">
   <div class="text-4xl font-[EB_Garamond] ">  News</div>
-  <div class="flex gap-24 p-2 w-fit h-fit shadow-2xl border-1 border-gray-200  "><p>Topics</p>  <i class="fa-solid fa-caret-down text-sm  pt-1.5 "></i></div>
+  <div class="flex gap-24 p-2 w-fit h-fit shadow-2xl border-1 border-gray-200 max-md:m-10 "><p>Topics</p>  <i class="fa-solid fa-caret-down text-sm  pt-1.5 "></i></div>
  </div>
  <!-- Grids -->
-  <div class="lg:flex text-[#011F5B] gap-9 px-6 pt-10 xl:px-[100px] 2xl:px-[200px] ">
+  <div class="lg:flex text-[#011F5B] gap-9 px-6 pt-10 xl:px-[100px] 2xl:px-[200px] flex flex-col lg:flex-row">
     <div class="flex-2 pl-6 border-b-1 border-gray-200 border-l-1  group"><img src="Images/pollution.jpg" alt="">
-    <p class="uppercase text-[#D45D00] font-semibold font-sm hover:underline">Health and Medecine</p>
-    <p class="font-[EB_Garamond] text-3xl group-hover:underline pr-20 ">Exposure to air pollution worsens Alzheimer’s disease
+    <p class="uppercase text-[#D45D00] font-semibold font-sm hover:underline  text-center">Health and Medecine</p>
+    <p class="font-[EB_Garamond] text-3xl group-hover:underline pr-20 text-center ">Exposure to air pollution worsens Alzheimer’s disease
           </p>
   </div>
   <div class="flex-3  border-l-1 border-gray-200  ">
-      <div class="grid grid-cols-2 ">
-      <div class="p-4 border-1 border-gray-200 group"><img src="Images/medecine.jpg" alt="">
-      <p class="uppercase text-[#D45D00] font-semibold font-sm hover:underline">Health and Medecine</p>
-      <p class="font-[EB_Garamond] text-lg group-hover:underline"> White coat ceremonies: A professional milestone
+      <div class="lg:grid lg:grid-cols-2   grid-rows-4">
+      <div class="p-4 border-1 border-gray-200 group "><img class="hidden lg:inline" src="Images/medecine.jpg" alt="">
+      <p class="uppercase text-[#D45D00] font-semibold font-sm hover:underline text-center">Health and Medecine</p>
+      <p class="font-[EB_Garamond] text-lg group-hover:underline text-center"> White coat ceremonies: A professional milestone
             </p>
       </div>
-      <div class="p-4 border-1 border-gray-200 group"><img src="Images/technology.jpeg" alt="">
-        <p class="uppercase text-[#D45D00] font-semibold font-sm hover:underline">Technology</p>
-        <p class="font-[EB_Garamond] text-lg group-hover:underline"> Guiding light towards smarter technology
+      <div class="p-4 border-1 border-gray-200 group"><img class="hidden lg:inline"  src="Images/technology.jpeg" alt="">
+        <p class="uppercase text-[#D45D00] font-semibold font-sm hover:underline text-center">Technology</p>
+        <p class="font-[EB_Garamond] text-lg group-hover:underline text-center"> Guiding light towards smarter technology
             </p>
       </div>
-      <div class="p-4 border-1 border-gray-200 group"><img src="Images/natural.jpg" alt="">
-      <p class="uppercase text-[#D45D00] font-semibold font-sm hover:underline">Natural Sciences</p>
-      <p class="font-[EB_Garamond] text-lg group-hover:underline"> Charles Kane to receive Lorentz Medal
+      <div class="p-4 border-1 border-gray-200 group"><img class="hidden lg:inline"  src="Images/natural.jpg" alt="">
+      <p class="uppercase text-[#D45D00] font-semibold font-sm hover:underline text-center">Natural Sciences</p>
+      <p class="font-[EB_Garamond] text-lg group-hover:underline text-center"> Charles Kane to receive Lorentz Medal
             </p>
       </div>
-      <div class="p-4 border-1 border-gray-200 group"><img src="Images/health.jpg" alt="">
-      <p class="uppercase text-[#D45D00] font-semibold font-sm hover:underline">Health and Medecine</p>
-      <p class="font-[EB_Garamond] text-lg group-hover:underline">  Pioneering strategy may keep breast cancer from coming back
+      <div class="p-4 border-1 border-gray-200 group"><img class="hidden lg:inline"  src="Images/health.jpg" alt="">
+      <p class="uppercase text-[#D45D00] font-semibold font-sm hover:underline text-center">Health and Medecine</p>
+      <p class="font-[EB_Garamond] text-lg group-hover:underline text-center">  Pioneering strategy may keep breast cancer from coming back
             </p>
       </div>
     </div>
@@ -86,11 +86,11 @@
    <div class="pt-15">
     <div class="relative bg-[url('/Images/more-section.avif')] bg-center  bg-cover bg-no-repeat p-10   h-[500px] xl:h-[650px] 2xl:mx-[100px]">
       
-      <div class="absolute py-15 border-5 border-[#011F5B] bg-[#011F5B] lg:w-[600px] text-white px-4 lg:inset-y-10 h-fit xl:inset-y-20 lg:left-6 w-fit top-[400px] max-md:inset-x-10 xl:left-[100px] ">
-        <h1 class="uppercase font-semibold pb-4 text-center">Health & Medicine</h1>
+      <div class="absolute p-3 bg-[#011F5B] lg:w-[600px] text-white  lg:inset-y-10 h-fit xl:inset-y-20 lg:left-6 w-fit top-[400px] max-md:inset-x-10 xl:left-[100px] ">
+       <div class=" py-15 px-4 border-1 border-gray-700 ">        <h1 class="uppercase font-semibold pb-4 text-center">Health & Medicine</h1>
         <h1 class="text-3xl font-[EB_Garamond] pb-12 pl-6 hover:underline">Keeping food safe and animals healthy</h1>
         <h2 class="pb-10 text-center px-10">As part of the Pennsylvania Animal Diagnostic Laboratory System (PADLS), Penn Vet’s New Bolton Center helps to protect animals and humans from health threats and minimize agricultural economic loss.</h2>
-       <div class="flex-center"> <button class="py-4 px-6 uppercase text-sm font-semibold hover:bg-white hover:text-[#D45D00] w-fit border-1 border-white rounded-full ">Learn more</button></div>
+       <div class="flex-center"> <button class="py-5 px-13 uppercase text-sm font-semibold hover:bg-white hover:text-[#D45D00] w-fit border-1 border-gray-600 rounded-full ">Learn more</button></div></div>
 
       </div>
 
@@ -139,19 +139,23 @@
     <div class="text-sm font-[EB_Garamond] text-[#011F5B] px-6 pt-20 pb-10 xl:px-[100px] 2xl:px-[200px] hover:underline font-semibold">MORE EVENTS VIA PENN TODAY</div>
 
     <div class="lg:flex px-6 gap-6  xl:px-[100px] 2xl:px-[200px] 2xl:gap-10">
-       <div class=" py-15 border-5 border-[#011F5B] bg-[#011F5B] lg:w-[600px] text-white px-4  h-[370px]  ">
-        
-        <h1 class="text-3xl font-[EB_Garamond] pb-12 pl-6 hover:underline">Federal Government Updates</h1>
+       <div class=" p-3    bg-[#011F5B] lg:w-[600px] text-white   h-[380px]  ">
+       <div class="py-15 px-4 border-1 border-gray-700">
+         
+        <h1 class="text-3xl font-[EB_Garamond] pb-12 pl-6 hover:underline text-center">Federal Government Updates</h1>
         <h2 class="pb-10 text-center px-10">Penn is closely monitoring federal policy changes affecting institutions of higher education and academic health systems.</h2>
-       <div class="flex-center"> <button class="py-5 px-9 uppercase text-sm font-semibold hover:bg-white hover:text-[#D45D00] w-fit border-1 border-white rounded-full ">Learn more</button></div>
+       <div class="flex-center"> <button class="py-5 px-13 uppercase text-sm font-semibold hover:bg-white hover:text-[#D45D00] w-fit border-1 border-gray-600 rounded-full ">Learn more</button></div>
 
+       </div>
       </div>
-       <div class=" py-16 border-5 border-[#011F5B] bg-[#011F5B] lg:w-[600px] text-white px-4  h-[370px] ">
+       <div class="  border-5 border-[#011F5B] bg-[#011F5B] lg:w-[600px] text-white  h-[380px] p-3 ">
        
-        <h1 class="text-3xl font-[EB_Garamond] pb-12 pl-6 hover:underline">Title IX Compliance in Athletics</h1>
+        <div class="py-16  px-4 border-1 border-gray-700">
+          <h1 class="text-3xl font-[EB_Garamond] pb-12 pl-6 hover:underline">Title IX Compliance in Athletics</h1>
         <h2 class="pb-10 text-center px-10">Penn's Title IX Resolution with the U.S. Department of Education Office for Civil Rights</h2>
-       <div class="flex-center"> <button class="py-5 px-9 uppercase text-sm font-semibold hover:bg-white hover:text-[#D45D00] w-fit border-1 border-white rounded-full ">Learn more</button></div>
+       <div class="flex-center"> <button class="py-5 px-13 uppercase text-sm font-semibold hover:bg-white hover:text-[#D45D00] w-fit border-1 border-gray-600 rounded-full ">Learn more</button></div>
 
+        </div>
       </div>
     </div>
     <!-- Penn Priorities -->
@@ -223,6 +227,70 @@
        <div class="flex-center"> <button class="py-5 px-9 uppercase text-sm font-semibold hover:bg-white hover:text-[#011F5B] w-fit border-1 border-white rounded-full ">NONDISCRIMINATION STATEMENT</button></div>
 
       </div>
+
+      <!-- Footer -->
+       <div class="h-fit bg-[url('/Images/footer-16.avif')] relative text-white px-6 xl:px-[100px] 2xl:px-[200px]">
+      <div class="absolute inset-0 bg-[#011F5B]/80 z-10"></div>
+      <div class="relative z-20 pt-[100px] pb-20 lg:pr-[100px]">
+        <div class="lg:flex justify-between">
+          <!-- Left -->
+          <div class="flex-1">
+            <div>
+              <img src="Images/penn-logo.svg "  class="w-[150px] invert brightness-50 pb-6" alt="">
+              <h1>Philadelphia, PA 19104</h1>
+              <h1>Telephone: <span class="text-[#073ead] hover:underline cursor-pointer"> (215) 898-5000</span></h1>
+            </div>
+            <div class="uppercase space-y-3 text-sm pt-6">
+              <div>Contact Us</div>
+              <div>Maps</div>
+              <div>Parking</div>
+            </div>
+          </div>
+          <!-- middle -->
+           <div class="flex-1">
+            <div class="text-xl font-[EB_Garamond] pb-5">Navigate</div>
+            <div class="uppercase space-y-3 text-sm">
+              <div>Alumni</div>
+              <div>Athletics</div>
+              <div>Belonging</div>
+              <div>Health Care</div>
+              <div>Libraries</div>
+              <div>Online Learning</div>
+              <div>Penn Global</div>
+            </div>
+           </div>
+           <!-- Right -->
+            <div class="flex-1">
+              <div class="font-[EB_Garamond] text-2xl pb-5">Penn's Hertage</div>
+              <div>As America’s first university, Penn has a history that dates back to 1740 and shares many ties with the colonial city of Philadelphia and the birth of our nation.</div>
+                <div class=""> <button class="py-4 mt-6 px-10 uppercase text-sm font-semibold hover:bg-white hover:text-[#011F5B] w-fit border-1 border-white rounded-full ">OUR HISTORY</button></div>
+            </div>
+        </div>
+        <!-- Lower Footer -->
+       <div class="pt-24 lg:flex justify-between">
+         <div class="">
+          <div class="flex gap-5">
+            <div class="w-fit border-1 border-gray-200 py-5 px-7"><i class="fa-solid fa-arrow-up"></i> </div>
+            <div class="pt-5">BACK TO TOP</div>
+          </div>
+        </div>
+        <!-- Right -->
+         <div>
+          <div class="lg:grid lg:grid-cols-3 uppercase text-sm justify-end gap-3 xl:grid-cols-4">
+            <div class="border-r-1 border-gray-400">Disclaimer</div>
+            <div class="border-r-1 border-gray-400 pr-3">Emergency Services</div>
+            <div class="border-r-1 border-gray-400">Nondiscrimination</div>
+            <div class="border-r-1 border-gray-400">Privacy Policy</div>
+            <div class="col-span-2 border-r-1 border-gray-400 ">Report Accessibility Issues and Get Help</div>
+            <div class="col-span-2">Report Copyright Infringement</div>
+          </div>
+        
+         </div>
+       </div>
+
+      </div>
+
+       </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
